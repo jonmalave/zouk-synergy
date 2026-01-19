@@ -19,15 +19,14 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2024-09-23',
+  compatibilityDate: '2026-01-19',
   nitro: {
     prerender: {
       routes: [
         '/'
       ]
     },
-    preset: 'cloudflare-pages', // or "cloudflare-module" if using Workers
-    // Optionally enable native Node compatibility
+    preset: 'cloudflare-pages',
     cloudflare: {
       deployConfig: true,
       nodeCompat: true

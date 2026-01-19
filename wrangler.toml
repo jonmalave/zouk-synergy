@@ -1,0 +1,21 @@
+name = "zouk-synergy"
+compatibility_date = "2026-01-19"
+
+pages_build_output_dir = ".output/public"
+
+[site]
+bucket = ".output/public"
+
+# Environment variables for build
+[vars]
+NITRO_PRESET = "cloudflare-pages"
+
+# Node.js compatibility for Cloudflare Workers
+compatibility_flags = ["nodejs_compat"]
+
+# Build configuration
+[build]
+command = "npx run generate"
+
+[build.upload]
+format = "service-worker"
